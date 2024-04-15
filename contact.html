@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+    <div class="layer">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <img src="./Images/wetter.png" alt="Weather App Logo">
+                <!-- <a class="navbar-brand text-white fs-2" href="index.html">Weather</a> -->
+                <div>
+                    <h1 class="m-0"><a href="index.html">Weather</a></h1>
+                    <span class="ps-4">tagline goes here</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#">Live Cameras</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#">Photo</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#">Contact</a>
+                        </li>                  
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="path p-4 mb-5 rounded-pill">
+                    <a class="ps-4" href="./index.html">Home <i class="px-2 fa-solid fa-arrow-right"></i></a>
+                    <span>Contact</span>
+                </div>
+                <div class="row gy-3">
+                    <div class="col-md-5">
+                        <div class="contact-card p-4 rounded-3 text-white d-flex flex-column justify-content-end">
+                            <div class="location d-flex justify-content-start align-items-start gap-2">
+                                <i class="fa-solid fa-location-dot p-1"></i>
+                                <p class="p-0 m-0">Company Name INC.<br>
+                                    2803 Avenue Street, Los Angeles</p>
+                            </div>
+                            <div class="contact-details mt-3">
+                                <div class="phone d-flex justify-content-start align-items-center gap-3">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <a href="">+1 800 314 235</a>
+                                </div>
+                                <div class="mail d-flex justify-content-start align-items-center gap-3">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="">contact@companyname.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ms-auto">
+                        <div class="contact-us rounded-3 text-white p-4">
+                            <h2>Contact Us</h2>
+                            <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6 p-2">
+                                        <input type="text" placeholder="Your Name..." class="w-100 rounded-3">
+                                    </div>
+                                    <div class="col-md-6 p-2">
+                                        <input type="text" placeholder="Email Adress..." class="w-100 rounded-3">
+                                    </div>
+                                    <div class="col-md-6 p-2">
+                                        <input type="text" placeholder="Company Name..." class="w-100 rounded-3">
+                                    </div>
+                                    <div class="col-md-6 p-2">
+                                        <input type="text" placeholder="Website..." class="w-100 rounded-3">
+                                    </div>
+                                    <div class="col-md-12 p-2">
+                                        <textarea name="" id="" rows="5" placeholder="Message..." class="w-100 rounded-3"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="py-3 mt-5">
+            <div class="container">
+                <div class="footer-container my-5">
+                    <div class="row gy-4 d-flex justify-content-center align-items-center">
+                        <div class="form-container col-md-8">
+                            <form class="" action="">
+                                <input type="text" placeholder="Find Your Location" class="search w-100 p-3 rounded-pill">
+                                <button id="submit">Find</button>
+                            </form>
+                        </div>
+                        <div class="icon-container col-md-4">
+                            <ul class="list-unstyled d-flex justify-content-center align-items-center gap-4 m-0 text-white">
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.x.com/" target="_blank">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/" target="_blank">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.pinterest.com/" target="_blank">
+                                        <i class="fa-brands fa-pinterest"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p>Copyright 2024 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+</html>

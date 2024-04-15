@@ -1,0 +1,170 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+.layer{
+    background-image: url(../Images/pexels-aleksandar-pasaric-325185.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    height: 100%;
+}
+
+nav{
+    background-color: rgba(0 , 0 , 0 , 0.4);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    box-shadow: 0 0 10px #0005;
+    width: 94%;
+    margin-inline: auto;
+    border-radius: 15px;
+}
+nav div span{
+    font-size: 10px;
+    font-weight: 400;
+}
+nav img{
+    width: 80px;
+}
+nav ul li a{
+    border: 2px solid transparent !important;
+    padding: 10px 20px !important;
+    border-radius: 15px;
+    background-color: transparent;
+    transition: all 0.3s;
+    margin-inline: 5px;
+}
+nav ul li a:hover{
+    border-color: #fff !important;
+    background-color: rgba(0 , 0 , 0 , 0.3);
+}
+
+main{
+    padding-top: 100px;
+}
+.search{
+    background-color: rgba(0 , 0 , 0 , 0.4);
+    backdrop-filter: blur(10px);
+    border: 2px solid transparent;
+    outline: none;
+    transition: all 0.3s;
+    color: #fff;
+    box-shadow: 0 0 15px #0005;
+}
+.search:focus{
+    border-color: #fff;
+}
+.search::placeholder{
+    color: rgba(255 , 255 , 255 , 0.8);
+}
+form{
+    position: relative;
+}
+button#submit{
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    height: 80%;
+    width: 90px;
+    border-radius: 30px;
+    padding-inline: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.inner{
+    background-color: rgba(0 , 0, 0, 0.5);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px #0005;
+    padding: 15px;
+    overflow: hidden;
+}
+.day{
+    border-bottom: 2px solid #fff7;
+}
+.weather-card{
+    margin-top: 15px;
+    min-height: 14rem;
+}
+.icon{
+    width: 60px;
+}
+.weather-card h2{
+    font-size: 3rem;
+}
+.weather-details span{
+    font-size: 14px;
+}
+.contact-card{
+    height: 300px;
+    background-color: rgba(0 , 0 , 0 , 0.4);
+    backdrop-filter: blur(10px);
+}
+.contact-card a,p{
+    font-weight: 400;
+}
+.contact-us{
+    background-color: rgba(0 , 0 , 0 , 0.4);
+    backdrop-filter: blur(10px);}
+.contact-us input,textarea{
+    background-color: #fff8;
+    border: 2px solid transparent;
+    outline: none;
+    padding: 5px;
+    transition: all 0.3s;
+}
+.contact-us input:focus,textarea:focus{
+    border-color: #fff;
+}
+.contact-us button{
+    padding: 7px 15px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #fff;
+    margin-top: 10px;
+}
+.path{
+    background-color: rgba(0 , 0 , 0 , 0.4);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    transition: all 0.3s;
+}
+.path a:hover{
+    text-decoration: underline;
+}
+/* Start Footer */
+footer{
+    background-color: rgba(0 , 0 , 0 , 0.5);
+    backdrop-filter: blur(10px);
+}
+footer p{
+    color: #fff9;
+    font-weight: 300;
+    text-align: center;
+}
+footer a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0 , 0 , 0 , 0.3);
+    border: 1px solid #fff9;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+footer a:hover{
+    color: black;
+    background-color: #fff;
+    border-color: black;
+}
