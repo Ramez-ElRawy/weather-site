@@ -1,11 +1,23 @@
 var searchInput = document.getElementById("Search");
 var dayElement = document.querySelectorAll(".day");
+var findLocationButton = document.querySelector("#Find");
+var emailingButton = document.querySelector("#submit");
 var latitude;
 var longitude;
 var weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 var currentLocationLatLang;
+
+emailingButton.addEventListener('click',function(e){
+    e.preventDefault();
+})
+
+findLocationButton.addEventListener('click',function(e){
+    e.preventDefault();
+    getData(searchInput.value);
+})
+
 
 searchInput.addEventListener('input', function(){
     getData(searchInput.value);

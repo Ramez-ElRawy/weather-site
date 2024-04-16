@@ -67,7 +67,7 @@ main{
 form{
     position: relative;
 }
-button#submit{
+button#submit,button#Find{
     position: absolute;
     top: 10%;
     right: 1%;
