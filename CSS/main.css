@@ -96,7 +96,10 @@ button#submit,button#Find{
     margin-top: 15px;
     min-height: 14rem;
 }
-.icon{
+img.main{
+    width: 90px;
+}
+img.reg{
     width: 60px;
 }
 .weather-card h2{
