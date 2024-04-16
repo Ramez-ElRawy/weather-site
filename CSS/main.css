@@ -1,5 +1,11 @@
 /* General*/
 body{
+    background-image: url(../Images/pexels-aleksandar-pasaric-325185.jpg);
+    background-size: cover;
+    background-position: contain;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    /* height: 100%; */
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -8,14 +14,6 @@ a{
     text-decoration: none;
     color: inherit;
     display: inline-block;
-}
-.layer{
-    background-image: url(../Images/pexels-aleksandar-pasaric-325185.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 30px;
-    height: 100%;
 }
 
 
