@@ -1,3 +1,4 @@
+/* General*/
 body{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -17,6 +18,8 @@ a{
     height: 100%;
 }
 
+
+/* Start Navbar */
 nav{
     background-color: rgba(0 , 0 , 0 , 0.4);
     backdrop-filter: blur(5px);
@@ -45,7 +48,10 @@ nav ul li a:hover{
     border-color: #fff !important;
     background-color: rgba(0 , 0 , 0 , 0.3);
 }
+/* End Navbar */
 
+
+/* Start Main */
 main{
     padding-top: 100px;
 }
@@ -94,10 +100,9 @@ button#submit,button#Find{
 }
 .weather-card{
     margin-top: 15px;
-    min-height: 14rem;
 }
 img.main{
-    width: 90px;
+    width: 100px;
 }
 img.reg{
     width: 60px;
@@ -106,10 +111,13 @@ img.reg{
     font-size: 3rem;
 }
 .weather-details span{
-    font-size: 14px;
+    font-size: 0.5rem;
 }
+/* End Main */
+
+
+/* Start Contact style */
 .contact-card{
-    height: 300px;
     background-color: rgba(0 , 0 , 0 , 0.4);
     backdrop-filter: blur(10px);
 }
@@ -145,6 +153,9 @@ img.reg{
 .path a:hover{
     text-decoration: underline;
 }
+/* End Contact style */
+
+
 /* Start Footer */
 footer{
     background-color: rgba(0 , 0 , 0 , 0.5);
@@ -171,3 +182,4 @@ footer a:hover{
     background-color: #fff;
     border-color: black;
 }
+/* End Footer */
