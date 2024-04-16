@@ -43,8 +43,8 @@ function assignData(data)
         {
             dayElement[i].children[0].textContent = weekDays[new Date(data.forecast.forecastday[i].date).getDay()];
             dayElement[i].children[1].textContent = `${new Date(data.forecast.forecastday[i].date).getDate()} ${month[new Date(data.forecast.forecastday[i].date).getMonth()]}`;
-            dayElement[i].nextElementSibling.children[0].textContent = data.location.name;
             
+            dayElement[i].nextElementSibling.children[0].textContent = data.location.name;
             dayElement[i].nextElementSibling.querySelector('p.temp').textContent = `${data.forecast.forecastday[i].day.avgtemp_c}°C`;
             dayElement[i].nextElementSibling.querySelector('img').setAttribute('src',`https:${data.forecast.forecastday[i].day.condition.icon}`);
             dayElement[i].nextElementSibling.children[2].textContent = data.forecast.forecastday[i].day.condition.text;
@@ -72,9 +72,11 @@ function getLocation()
 
 function showPosition(position) 
 {
+    // console.log(position);
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
     currentLocationLatLang = latitude+','+longitude;
+    // console.log(currentLocationLatLang);
     getData(currentLocationLatLang);
     // console.log(currentLocationLatLang);
     // console.log(latitude);
@@ -82,7 +84,7 @@ function showPosition(position)
 }
 
 getLocation();
-console.log(dayElement);
+// console.log(dayElement);
 
 /* 
 Get User Current Location ===> Set it to Defualt ===> display Weather for current location
