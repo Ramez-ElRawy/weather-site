@@ -2,10 +2,10 @@
 body{
     background-image: url(../Images/pexels-aleksandar-pasaric-325185.jpg);
     background-size: cover;
-    background-position: contain;
+    /* background-position: center; */
     background-repeat: no-repeat;
     padding-top: 30px;
-    /* height: 100%; */
+    height: 100%;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
