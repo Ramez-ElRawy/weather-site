@@ -1,34 +1,39 @@
-var searchInput = document.getElementById("Search");
-var dayElement = document.querySelectorAll(".day");
-var findLocationButton = document.querySelector("#Find");
-var emailingButton = document.querySelector("#submit");
-var latitude;
-var longitude;
-var weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+// HTML Elements
+let searchInput = document.getElementById("Search");
+let dayElement = document.querySelectorAll(".day");
+let findLocationButton = document.querySelector("#Find");
+let emailingButton = document.querySelector("#submit");
 
-var currentLocationLatLang;
+// App Variables
+let weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+let month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+let currentLocationLatLang;
 
-emailingButton.addEventListener('click',function(e){
-    e.preventDefault();
-})
+// Functions
+function getLocation() 
+{
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } 
+    else {
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
 
-findLocationButton.addEventListener('click',function(e){
-    e.preventDefault();
-    getData(searchInput.value);
-})
-
-
-searchInput.addEventListener('input', function(){
-    getData(searchInput.value);
-})
+function showPosition(position) 
+{
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    currentLocationLatLang = latitude+','+longitude;
+    getData(currentLocationLatLang);
+}
 
 async function getData(searchTerm)
 {
     try {
-        var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=f33bcc4967c1432db7e125037240704&q=${searchTerm}&days=5`);
+        var response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=f33bcc4967c1432db7e125037240704&q=${searchTerm}&days=3`);
         var data = await response.json();
-        // console.log(data);
+        console.log(data);
         assignData(data);
     } catch (error) {
         getData(currentLocationLatLang);
@@ -60,34 +65,23 @@ function assignData(data)
     }
 }
 
-function getLocation() 
-{
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
-    } 
-    else {
-      x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
+// Events
+emailingButton.addEventListener('click',function(e){
+    e.preventDefault();
+})
 
-function showPosition(position) 
-{
-    // console.log(position);
-    latitude = position.coords.latitude;
-    longitude = position.coords.longitude;
-    currentLocationLatLang = latitude+','+longitude;
-    // console.log(currentLocationLatLang);
-    getData(currentLocationLatLang);
-    // console.log(currentLocationLatLang);
-    // console.log(latitude);
-    // console.log(longitude);
-}
+findLocationButton.addEventListener('click',function(e){
+    e.preventDefault();
+    getData(searchInput.value);
+})
+
+searchInput.addEventListener('input', function(){
+    getData(searchInput.value);
+})
+
 
 getLocation();
-// console.log(dayElement);
-
-/* 
-Get User Current Location ===> Set it to Defualt ===> display Weather for current location
-
-
+/*
+Get User Current Location ===> Set it to Defualt 
+===> display Weather for current location
 */
